@@ -6,5 +6,5 @@
   npm install
   
   
-# Build The App and Run Development Server
+# Build App and Run Development Server
   npm start
