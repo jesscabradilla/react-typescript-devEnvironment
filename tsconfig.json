@@ -1,0 +1,28 @@
+{
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "compilerOptions": {
+        "target": "es5", // output version; to support es5 install the 'core-js' type from 'definitely typed'
+        // and npm install core-js module
+		"module": "commonjs", // works with system, and other module systems
+		"moduleResolution": "node", // newer mechanism for finding modules, do not use classic
+        "emitDecoratorMetadata": true, // output design time metadata for decorated declarations
+        "experimentalDecorators": true, // enable es7 decorators
+        "noImplicitAny": true, // raise errors for implicit any,
+		"removeComments": false, // do not remove comments
+        "noEmitHelpers": false,
+        "sourceMap": true, // output source maps
+        "inlineSourceMap": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "jsx": "react", // enable JSX support for React
+        "strictNullChecks": false
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "filesGlob": [
+        "./src/ts/**/*.ts",
+        "./typings/index.d.ts",
+        "!./nodes_modules/**"
+    ]
+}
