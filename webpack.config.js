@@ -3,7 +3,6 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ProvidePlugin } = require('webpack');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 const srcFolder = 'src';
@@ -62,10 +61,7 @@ module.exports = {
 
   
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'css/[name]-generated.css'
-        }),
-
+        
         new ProvidePlugin({
             'Promise': 'es6-promise',
             'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
